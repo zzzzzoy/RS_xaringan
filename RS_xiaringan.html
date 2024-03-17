@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Sentinel-1</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zhongzhen Ouyang" />
+    <script src="libs/header-attrs-2.25/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Sentinel-1
+]
+.author[
+### Zhongzhen Ouyang
+]
+
+---
+
+
+##WHAT?
+- Sentinel-1 is the first of the five missions that European Space Agency(ESA) is developing for the Copernicus initiative
+- providing an all-weather, day-and-night supply of images of Earth’s surface 
+- Composed of a constellation of two satellites, Sentinel-1A and Sentinel-1B, sharing the same orbital plane
+- A single SENTINEL-1 satellite will be able to map the entire world once every 12 days. The two-satellite constellation offers a 6 day exact repeat cycle.
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="data/sentinel_1.jpg" alt="(Source: ESA)" width="60%" /&gt;
+&lt;p class="caption"&gt;(Source: ESA)&lt;/p&gt;
+&lt;/div&gt;
+---
+.pull-left[##SAR 
+- SENTINEL-1 carries a single C-band synthetic aperture radar instrument operating at a centre frequency of 5.405 GHz
+- Synthetic Aperture Radar (SAR) offers the advantage of operating at wavelengths unaffected by cloud cover or insufficient illumination, allowing data acquisition over a location during both day and night, irrespective of weather conditions]
+.pull-right[##Spatial resolution
+Four modes
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Mode &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Resolution &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Stripmap &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5 x 5 m &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Interferometric Wide swath &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5 x 20 m &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Extra Wide swath &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 20 x 40 m &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Wave &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 5 x 5 m &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="data/image_gallery.png" alt="(Source: ESA)" width="60%" /&gt;
+&lt;p class="caption"&gt;(Source: ESA)&lt;/p&gt;
+&lt;/div&gt;
+---
+##Application
+Main applications include:
+ - Monitoring sea ice and icebergs 
+ - monitoring of land ice (glaciers, ice sheets, ice caps) 
+ - river and lake ice monitoring 
+ - oil spills and ships 
+ - marine winds &amp; waves 
+ - land-use change, agriculture, deforestation
+ - land deformation 
+ - support to emergency management such as floods and earthquakes
+ 
+---
+###An assessment of oil spill detection using Sentinel 1 SAR-C images(Akinwumiju, Adelodun and Ogundeji, 2020)
+The paper studies an oil spill occurred in the Al Khafji region by applying sentinel 1 SAR-C images.
+When radar signals are transmitted to the ocean, oil spills can be identified due to the dampening effect of oil on surface waves.This article compares VV polarization and VH polarization(two methods to identify oil spills), concluding that VV polarization is more suitable for identifying oil spills.
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="data/1-s2.0-S2468013319301494-gr9_lrg.jpg" alt="(Source: Chaturvedi, Banerjee and Lele, 2020)" width="100%" /&gt;
+&lt;p class="caption"&gt;(Source: Chaturvedi, Banerjee and Lele, 2020)&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="data/1-s2.0-S2468013319301494-gr10_lrg.jpg" alt="(a)VH and (b)VV" width="100%" /&gt;
+&lt;p class="caption"&gt;(a)VH and (b)VV&lt;/p&gt;
+&lt;/div&gt;
+]
+---
+##Reflection
+- Unlike Landsat carrying multi-spectral sensors that Multi-spectral sensors capture spectral information by detecting electromagnetic radiation in the visible and infrared bands to capture the reflected or emitted radiation from the Earth's surface, Sentinel-1 carries SAR which is an active sensor that do not rely on reflected sunlight
+- As Sentinel-1 moves, SAR can record the echoes of Sentinel-1 at different positions and merge them to form higher-resolution images.
+- SAR offers the advantage of operating at wavelengths unaffected by cloud cover or insufficient illumination, allowing data acquisition over a location during both day and night, irrespective of weather conditions
+---
+##References
+Chaturvedi, S.K., Banerjee, S., Lele, S., 2020. An assessment of oil spill detection using Sentinel 1 SAR-C images. Journal of Ocean Engineering and Science 5, 116–135. https://doi.org/10.1016/j.joes.2019.09.004
+
+*Sentinel-1 - Missions - Sentinel Online - Sentinel Online* (no date). Available at: https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1 (Accessed: 17 February 2024).
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
